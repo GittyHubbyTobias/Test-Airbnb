@@ -42,6 +42,8 @@ models:
         +materialized: view
         dim:
           +materialized: table
+        src:
+          +materialized: ephermeral
     # Applies to all files under models/example/
     example:
       +materialized: table
